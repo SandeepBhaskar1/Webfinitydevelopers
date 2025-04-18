@@ -5,11 +5,11 @@ const Navbar = () => {
   return (
     <div className='navbar-container'>
         <ul>
-            <li>About</li>
-            <li>Work</li>
-            <li><img src="./webfinity-new-logo.svg" alt="Webfinity Developers New Logo" /></li>
-            <li>Writing</li>
-            <li>Contact</li>
+            <li>ABOUT</li>
+            <li>WORK</li>
+            <li><img src="./webfinity.png" alt="Webfinity Developers New Logo" /></li>
+            <li>WRITING</li>
+            <li>CONTACT</li>
         </ul>
     </div>
   )

@@ -1,43 +1,79 @@
+/* Reset base styles */
 body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: Arial, sans-serif;
 }
 
+/* Hero Section Container */
 .hero-container {
   width: 100vw;
-  height: calc(100vh - 20vh);
+  height: 73.5vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #000000;
+  background-color: rgba(16, 19, 17, 0.85);
+  position: relative;
+  padding: 2rem;
+  backdrop-filter: blur(50%);
+  text-align: center;
 }
 
+/* Half Circle Shape */
+.half-circle {
+  width: 25rem;
+  height: 25rem;
+  background-color: rgb(30, 255, 0);
+  border-radius: 50%;
+  position: absolute;
+  top: 2rem;
+  left: -15rem; /* 👈 Add this to start it off-screen */
+  z-index: -1;
+  transform: translateY(-400px);
+  animation: moveleftright 6s infinite alternate ease-in-out;
+  filter: blur(30px);
+  opacity: 0.7;
+}
+
+
+/* Animation keyframes */
+@keyframes moveleftright {
+  0% {
+    left: -15rem;
+  }
+  100% {
+    left: calc(100% - 15rem); /* Adjust to stay within view */
+  }
+}
+
+
+/* Gradient Text */
 .silver-liner-gradient-text {
-  background-image: linear-gradient(to right, #AFAFAF, #988888, #9b6262);
+  background-image: linear-gradient(to right, #8b9ea0, #eaeeee, #70818a);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  transform: translateY(-100px);
-  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 0rem;
 }
 
+/* Paragraph Styling */
 .hero-container p {
   color: white;
-  transform: translateY(-100px);
   font-size: 1.25rem;
-  text-align: center;
   max-width: 800px;
-  margin: 10px 20px;
+  margin: 1rem auto;
 }
 
+/* Animated Button */
 .btn-01 {
   width: 7.5rem;
   height: 3rem;
   border-radius: 60px;
   border: 1px solid transparent; 
-  background: black;
+  background-color: rgba(16, 19, 17, 0.85);
   color: white;
   display: flex;
   justify-content: center;
@@ -45,7 +81,13 @@ body, html {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  transform: translateY(-70px);
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.btn-01:hover {
+  transform: scale(1.05);
 }
 
 .btn-01::before {
@@ -61,7 +103,7 @@ body, html {
 .btn-01::after {
   content: '';
   position: absolute;
-  top: 3px; /* match border thickness */
+  top: 3px;
   left: 3px;
   right: 3px;
   bottom: 3px;
