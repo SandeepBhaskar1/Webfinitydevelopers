@@ -9,72 +9,58 @@ body, html {
 /* Hero Section Container */
 .hero-container {
   width: 100vw;
-  height: 73.5vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(16, 19, 17, 0.85);
+
   position: relative;
   padding: 2rem;
   backdrop-filter: blur(50%);
   text-align: center;
 }
 
-/* Half Circle Shape */
-.half-circle {
-  width: 25rem;
-  height: 25rem;
-  background-color: rgb(30, 255, 0);
-  border-radius: 50%;
-  position: absolute;
-  top: 2rem;
-  left: -15rem; /* 👈 Add this to start it off-screen */
-  z-index: -1;
-  transform: translateY(-400px);
-  animation: moveleftright 6s infinite alternate ease-in-out;
-  filter: blur(30px);
-  opacity: 0.7;
-}
-
-
-/* Animation keyframes */
-@keyframes moveleftright {
-  0% {
-    left: -15rem;
-  }
-  100% {
-    left: calc(100% - 15rem); /* Adjust to stay within view */
-  }
-}
-
-
 /* Gradient Text */
 .silver-liner-gradient-text {
-  background-image: linear-gradient(to right, #8b9ea0, #eaeeee, #70818a);
+  background-image: linear-gradient(to right, #8b9ea0, #eaeeeb, #70818a);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 2.5rem;
-  margin-top: 0rem;
+  text-align: start;
+  font-size: 3.5rem;
+  margin-top: -2.5rem;
+  margin-right: 45rem;
+  font-weight: 100;
+}
+
+.silver-liner-gradient-text span {
+  color: green;
+  font-size: 3.5rem;
 }
 
 /* Paragraph Styling */
 .hero-container p {
-  color: white;
-  font-size: 1.25rem;
-  max-width: 800px;
+  color: #8b9ea0;
+  font-size: 1.2rem;
+  max-width: 700px;
   margin: 1rem auto;
+  width: 750px;
+  margin-right: 57rem;
+  margin-top: 2rem;
+  text-align: start;
+  line-height: 25px;
 }
 
 /* Animated Button */
 .btn-01 {
-  width: 7.5rem;
+  width: 10rem;
   height: 3rem;
   border-radius: 60px;
   border: 1px solid transparent; 
-  background-color: rgba(16, 19, 17, 0.85);
-  color: white;
+  color: black;
+  font-size: 1rem;
+  background-color: green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,41 +68,11 @@ body, html {
   z-index: 1;
   overflow: hidden;
   margin-top: 1.5rem;
+  margin-right: 75rem;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  font-weight: 200;
 }
 
-.btn-01:hover {
-  transform: scale(1.05);
-}
-
-.btn-01::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: conic-gradient(from 0deg, rgb(43, 255, 0), transparent 60%);
-  animation: revolve 3s linear infinite;
-  z-index: -2;
-}
-
-.btn-01::after {
-  content: '';
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  right: 3px;
-  bottom: 3px;
-  border-radius: calc(60px - 3px);
-  background: rgb(70, 70, 70);
-  z-index: -1;
-}
-
-@keyframes revolve {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.btn-01 span {
+  font-weight: 500;
 }
