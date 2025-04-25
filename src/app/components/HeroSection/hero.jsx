@@ -27,6 +27,7 @@ const HeroSection = () => {
           <button className="btn-01"><span><strong>Get Started</strong></span></button>
         </div>
         <div className="hero-spacer"></div>
+        <div className="hero-spacer-01"></div>
       </div>
     </div>
   );

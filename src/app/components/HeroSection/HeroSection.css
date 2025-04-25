@@ -36,9 +36,9 @@ body, html {
 }
 
 /* Right section (optional spacer or image space) */
-.hero-spacer {
+/* .hero-spacer {
   flex: 1;
-}
+} */
 
 /* Gradient Text */
 .silver-liner-gradient-text {
@@ -86,4 +86,11 @@ body, html {
 
 .btn-01 span {
   font-weight: 500;
+}
+
+.hero-spacer-01{
+  width: 200px;
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+  translate: 15rem 29rem;
 }
