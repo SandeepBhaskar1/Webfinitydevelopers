@@ -30,6 +30,7 @@ const WhatWeDo = () => {
             </div>
 
             <div className="services">
+                <img src="/icons/ads.png" alt="ads icon" />
                 <h2>Meta / Google Ads</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt consequatur in labore aliquam soluta unde modi dignissimos voluptates, dolor deleniti quas, mollitia incidunt quibusdam explicabo neque perferendis suscipit id.</p>
             </div>

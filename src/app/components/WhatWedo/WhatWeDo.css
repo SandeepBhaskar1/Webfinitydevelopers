@@ -62,6 +62,12 @@
     line-height: 1.6;
     color: #ffffff;
   }
+
+  .services img {
+    width: 6rem;
+    translate: 130%;
+    margin: 2rem 0;
+  }
   
   /* Responsive layout for smaller screens */
   @media (max-width: 900px) {

@@ -1,14 +1,15 @@
 'use client';
 
 import React from 'react';
-import VantaBackground from '@/app/Pages/VantaBackground';
+// import VantaBackground from '@/app/Pages/VantaBackground';
 import Navbar from '../Navbar/Navbar';
 import './HeroSection.css';
+import SplineViewer from '../Spline/SplineViewer';
 
 const HeroSection = () => {
   return (
     <div className="hero-container">
-      <VantaBackground />
+      <SplineViewer />
       <Navbar />
 
       <div className="content-container">
