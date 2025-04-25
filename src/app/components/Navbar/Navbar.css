@@ -1,5 +1,5 @@
 .navbar-container {
-  position: fixed; 
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
@@ -13,6 +13,7 @@
   color: white;
   z-index: 3;
   background: transparent; 
+  margin-top: 0;
 }
 
 .navbar-container ul {
