@@ -1,6 +1,6 @@
 import Hero from './components/HeroSection/hero';
 import Testimonials from './components/Testimony/Testimonials';
-import WhatWeDo from './components/WhatWedo/WhatWeDo';
+import Frame from './components/WhatWedo/WhatWeDo';
 import './globals.css';
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
     <>
     <Hero />
     <Testimonials />
-    <WhatWeDo />
+    <Frame />
     </>
   );
 }
