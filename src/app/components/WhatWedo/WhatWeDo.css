@@ -14,8 +14,8 @@ html, body {
   justify-content: center; /* Center horizontally */
   align-items: flex-start; /* Align items to the top (or adjust as needed) */
   width: 100%;
-  min-height: 100vh; /* Use min-height to allow content to grow */
-  overflow-x: hidden;
+  height: 100vh; /* Use min-height to allow content to grow */
+  overflow: hidden;
 }
 
 .frame .overlap-wrapper {
@@ -31,20 +31,22 @@ html, body {
   display: flex;
   justify-content: center; /* Center horizontally */
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 
 .frame .overlap {
   position: relative;
   top: 120px; /* Keep the initial top offset if desired */
   left: 0; /* Ensure no extra left offset */
-  width: 1680px;
+  width: 1625px;
   height: 840px;
   transform-origin: center top; /* Scale towards the center horizontally, from the top */
   transition: transform 0.3s ease;
   display: flex;
   justify-content: center; /* Center content horizontally within overlap */
-  align-items: center; /* Align items to the top within overlap */
+  align-items: center; 
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .frame .overlap-group {
@@ -287,48 +289,204 @@ html, body {
 }
 
 /* Scaling responsiveness with horizontal centering */
-@media (min-width: 1920px) {
+@media (min-width: 1921px),(max-width: 2600px) {
   .frame .overlap {
-    transform: scale(1);
+    transform: scale(1) translateX(5%);
+    margin-right: auto;
+    margin-left: auto; /* No translation at full scale */
+  }
+}
+
+@media (max-width: 1920px) {
+  .frame .overlap {
+    transform: scale(1) translateX(5%);
+    margin-right: auto;
+    margin-left: auto; /* No translation at full scale */
   }
 }
 
 @media (min-width: 1850px) {
   .frame .overlap {
-    transform: scale(0.97);
+    transform: scale(0.97) translateX(-1.536%);
+    margin-right: auto;
+    margin-left: auto; /* Approximate adjustment */
   }
 }
 
 @media (max-width: 1750px) {
   .frame .overlap {
-    transform: scale(0.9);
+    transform: scale(0.9) ; /* Adjust the percentage as needed */
     transform-origin: top center;
-    translate: -2% -4.5%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1500px) {
+  .frame .overlap {
+    transform: scale(0.85) translateX(-7.5%); /* Adjust the percentage as needed */
+    transform-origin: top center;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
 @media (max-width: 1440px) {
   .frame .overlap {
-    transform: scale(0.8);
+    transform: scale(0.8) translateX(-9%); /* Adjust the percentage as needed */
     transform-origin: top center;
-    translate: -7.5%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1375px) {
+  .frame .overlap {
+    transform: scale(0.75) translate(-11%, -6%); /* Adjust the percentage as needed */
+    transform-origin: top center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1300px) {
+  .frame .overlap {
+    transform: scale(0.72) translate(-15%, -8%); /* Adjust the percentage as needed */
+    transform-origin: top center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1250px) {
+  .frame .overlap {
+    transform: scale(0.7) translate(-16.5%, -8%); /* Adjust the percentage as needed */
+    transform-origin: top center;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
 @media (max-width: 1200px) {
   .frame .overlap {
-    transform: scale(0.75);
+    transform: scale(0.68) translate(-19.5%, -6%); /* Adjust the percentage as needed */
+    transform-origin: top center;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1150px) {
   .frame .overlap {
-    transform: scale(0.65);
+    transform: scale(0.66) translate(-23%, -6%); /* Adjust the percentage as needed */
+    transform-origin: top center;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   .frame .overlap {
-    transform: scale(0.55);
+    transform: scale(0.62) translate(-25.5%, -6%); /* Adjust the percentage as needed */
+    transform-origin: top center;
+    margin-right: auto;
+    margin-left: auto;
   }
-} 
+}
+
+@media (max-width: 1024px) {
+  .frame .overlap {
+    transform: scale(0.58) translateX(-31.5%);
+    transform-origin: top center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+
+
+/* mobile view */
+@media (max-width: 480px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Changed to center */
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .frame .overlap-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Changed to center */
+    width: 100%;
+    height: auto;
+  }
+
+  .frame .overlap-scaler {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .frame .overlap {
+    position: relative;
+    top: 0; /* Reset top position */
+    left: 0; /* Reset left position */
+    width: 100%;
+    height: auto;
+    /* min-height: 1970px; */
+    transform: none !important; /* Reset all transforms */
+    margin: 0 auto; /* Center the element */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* Add positioning for your mobile content elements */
+  .mobile-service-01 {
+    width: 350px;
+    height: 396px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile-service-02 {
+    width: 350px;
+    height: 396px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    transform: rotate(180deg) translateY(7.4rem);
+  }
+
+  .mobile-globe{
+    width: 170px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    translate: 6rem -9rem;
+  }
+
+  .mobile-card{
+    width: 360px;
+    height: 396px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-10rem);
+    margin-bottom: 1rem;
+  }
+}
