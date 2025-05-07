@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic';
 import './SplineViewer.css';
 
-const Spline = dynamic(() => import('@splinetool/react-spline/next').then(mod => mod.default), {
+const Spline = dynamic(() => import('@splinetool/react-spline/dist/react-spline').then(mod => mod.default), {
   ssr: false,
 });
 
