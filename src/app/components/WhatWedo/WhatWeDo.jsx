@@ -27,9 +27,9 @@ export default function Frame() {
                 <img className='mobile-service-01' src="/whatwedo/Services.svg" alt="Services" />
                 <img className='mobile-globe' src="/whatwedo/Globe.svg" alt="Globe" />
                 <img className='mobile-service-02' src="/whatwedo/Services.svg" alt="Service" />
-                <img className='mobile-card' src="/whatwedo/website-designing.svg" alt="Card-01" />
+                <img className='mobile-card' src="/whatwedo/Website-designing.svg" alt="Card-01" />
                 <img className='mobile-card' src="/whatwedo/E-commerce.svg" alt="Card-02" />
-                <img className='mobile-card' src="/whatwedo/website-designing.svg" alt="Card-03" />
+                <img className='mobile-card' src="/whatwedo/Website-designing.svg" alt="Card-03" />
                 <img className='mobile-card' src="/whatwedo/E-commerce.svg" alt="Card-04" />
               </div>
             ) : (
@@ -76,7 +76,7 @@ export default function Frame() {
                 <div className="overlap-3">
                   <img
                     className="website-designing"
-                    src="/whatwedo/website-designing.svg"
+                    src="/whatwedo/Website-designing.svg"
                     alt="Website Designing"
                   />
                   <img className="new-2" src="/whatwedo/new-01.svg" alt="New" />
