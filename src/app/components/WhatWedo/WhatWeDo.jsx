@@ -24,13 +24,13 @@ export default function Frame() {
           <div className="overlap">
             {mobileView ? (
               <div>
-                <img className='mobile-service-01' src="/whatwedo/Services.svg" alt="" />
-                <img className='mobile-globe' src="/whatwedo/Globe.svg" alt="" />
-                <img className='mobile-service-02' src="/whatwedo/Services.svg" alt="" />
-                <img className='mobile-card' src="/whatwedo/website-designing.svg" alt="" />
-                <img className='mobile-card' src="/whatwedo/E-commerce.svg" alt="" />
-                <img className='mobile-card' src="/whatwedo/website-designing.svg" alt="" />
-                <img className='mobile-card' src="/whatwedo/E-commerce.svg" alt="" />
+                <img className='mobile-service-01' src="/whatwedo/Services.svg" alt="Services" />
+                <img className='mobile-globe' src="/whatwedo/Globe.svg" alt="Globe" />
+                <img className='mobile-service-02' src="/whatwedo/Services.svg" alt="Service" />
+                <img className='mobile-card' src="/whatwedo/website-designing.svg" alt="Card-01" />
+                <img className='mobile-card' src="/whatwedo/E-commerce.svg" alt="Card-02" />
+                <img className='mobile-card' src="/whatwedo/website-designing.svg" alt="Card-03" />
+                <img className='mobile-card' src="/whatwedo/E-commerce.svg" alt="Card-04" />
               </div>
             ) : (
               <>

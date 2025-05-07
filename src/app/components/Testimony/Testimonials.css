@@ -34,5 +34,27 @@
     filter: brightness(0) invert(1);
     object-fit: contain;
   }
+
+  @media (max-width: 480px) {
+    .testimony-container {
+      padding: 1rem;
+    }
+
+    .testimony-container h1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+
+    .company-logos{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
   
   

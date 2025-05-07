@@ -417,7 +417,7 @@ html, body {
     justify-content: center;
     align-items: center; /* Changed to center */
     width: 100%;
-    height: auto;
+    height: 2425px;
     overflow: hidden;
     margin: 0;
   }
@@ -428,12 +428,11 @@ html, body {
     justify-content: center;
     align-items: center; /* Changed to center */
     width: 100%;
-    height: auto;
+    translate: 0 -51rem;
   }
 
   .frame .overlap-scaler {
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
   }
@@ -443,8 +442,6 @@ html, body {
     top: 0; /* Reset top position */
     left: 0; /* Reset left position */
     width: 100%;
-    height: auto;
-    /* min-height: 1970px; */
     transform: none !important; /* Reset all transforms */
     margin: 0 auto; /* Center the element */
     display: flex;
@@ -487,6 +484,6 @@ html, body {
     display: flex;
     justify-content: center;
     transform: translateY(-10rem);
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
 }
