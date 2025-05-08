@@ -1,4 +1,4 @@
-*{
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,40 +11,40 @@ html, body {
 .frame {
   background-color: #03061c;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: flex-start; /* Align items to the top (or adjust as needed) */
+  justify-content: center;
+  align-items: flex-start;
   width: 100%;
-  height: 100vh; /* Use min-height to allow content to grow */
+  height: 100vh;
   overflow: hidden;
 }
 
 .frame .overlap-wrapper {
   background-color: #03061c;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: flex-start; /* Align items to the top */
+  justify-content: center;
+  align-items: flex-start;
   width: 100%;
   height: 100vh;
 }
 
 .frame .overlap-scaler {
   display: flex;
-  justify-content: center; /* Center horizontally */
+  justify-content: center;
   width: 100%;
   height: auto;
 }
 
 .frame .overlap {
   position: relative;
-  top: 120px; /* Keep the initial top offset if desired */
-  left: 0; /* Ensure no extra left offset */
+  top: 120px;
+  left: 0;
   width: 1625px;
   height: 840px;
-  transform-origin: center top; /* Scale towards the center horizontally, from the top */
+  transform-origin: center top;
   transition: transform 0.3s ease;
   display: flex;
-  justify-content: center; /* Center content horizontally within overlap */
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   margin-right: auto;
   margin-left: auto;
 }
@@ -160,9 +160,7 @@ html, body {
 }
 
 .frame .rectangle {
-  background: radial-gradient(50% 50% at 0 50%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%),
-    radial-gradient(50% 50% at 33% 50%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%),
-    linear-gradient(0deg, rgba(235, 146, 86, 1) 0%, rgba(235, 146, 86, 1) 100%);
+  background: radial-gradient(50% 50% at 0 50%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(50% 50% at 33% 50%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(235, 146, 86, 1) 0%, rgba(235, 146, 86, 1) 100%);
   border-bottom: 1px solid #ffffff26;
   border-top: 1px solid #ffffff26;
   border-radius: 9999px;
@@ -288,12 +286,11 @@ html, body {
   width: 208px;
 }
 
-/* Scaling responsiveness with horizontal centering */
-@media (min-width: 1921px),(max-width: 2600px) {
+@media (min-width: 1921px), (max-width: 2600px) {
   .frame .overlap {
     transform: scale(1) translateX(5%);
     margin-right: auto;
-    margin-left: auto; /* No translation at full scale */
+    margin-left: auto;
   }
 }
 
@@ -301,7 +298,7 @@ html, body {
   .frame .overlap {
     transform: scale(1) translateX(5%);
     margin-right: auto;
-    margin-left: auto; /* No translation at full scale */
+    margin-left: auto;
   }
 }
 
@@ -309,13 +306,13 @@ html, body {
   .frame .overlap {
     transform: scale(0.97) translateX(-1.536%);
     margin-right: auto;
-    margin-left: auto; /* Approximate adjustment */
+    margin-left: auto;
   }
 }
 
 @media (max-width: 1750px) {
   .frame .overlap {
-    transform: scale(0.9) ; /* Adjust the percentage as needed */
+    transform: scale(0.9);
     transform-origin: top center;
     margin-right: auto;
     margin-left: auto;
@@ -324,7 +321,7 @@ html, body {
 
 @media (max-width: 1500px) {
   .frame .overlap {
-    transform: scale(0.85) translateX(-7.5%); /* Adjust the percentage as needed */
+    transform: scale(0.85) translateX(-7.5%);
     transform-origin: top center;
     margin-right: auto;
     margin-left: auto;
@@ -333,7 +330,7 @@ html, body {
 
 @media (max-width: 1440px) {
   .frame .overlap {
-    transform: scale(0.8) translateX(-9%); /* Adjust the percentage as needed */
+    transform: scale(0.8) translateX(-9%);
     transform-origin: top center;
     margin-right: auto;
     margin-left: auto;
@@ -342,7 +339,7 @@ html, body {
 
 @media (max-width: 1375px) {
   .frame .overlap {
-    transform: scale(0.75) translate(-11%, -6%); /* Adjust the percentage as needed */
+    transform: scale(0.75) translate(-11%, -6%);
     transform-origin: top center;
     margin-right: auto;
     margin-left: auto;
@@ -351,7 +348,7 @@ html, body {
 
 @media (max-width: 1300px) {
   .frame .overlap {
-    transform: scale(0.72) translate(-15%, -8%); /* Adjust the percentage as needed */
+    transform: scale(0.72) translate(-15%, -8%);
     transform-origin: top center;
     margin-right: auto;
     margin-left: auto;
@@ -360,7 +357,7 @@ html, body {
 
 @media (max-width: 1250px) {
   .frame .overlap {
-    transform: scale(0.7) translate(-16.5%, -8%); /* Adjust the percentage as needed */
+    transform: scale(0.7) translate(-16.5%, -8%);
     transform-origin: top center;
     margin-right: auto;
     margin-left: auto;
@@ -369,7 +366,16 @@ html, body {
 
 @media (max-width: 1200px) {
   .frame .overlap {
-    transform: scale(0.68) translate(-19.5%, -6%); /* Adjust the percentage as needed */
+    transform: scale(0.68) translate(-19.5%, -6%);
+    transform-origin: top center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1175px) {
+  .frame .overlap {
+    transform: scale(0.67) translate(-21.5%, -6%);
     transform-origin: top center;
     margin-right: auto;
     margin-left: auto;
@@ -378,7 +384,16 @@ html, body {
 
 @media (max-width: 1150px) {
   .frame .overlap {
-    transform: scale(0.66) translate(-23%, -6%); /* Adjust the percentage as needed */
+    transform: scale(0.66) translate(-23%, -6%);
+    transform-origin: top center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1125px) {
+  .frame .overlap {
+    transform: scale(0.64) translate(-24%, -6%);
     transform-origin: top center;
     margin-right: auto;
     margin-left: auto;
@@ -387,7 +402,25 @@ html, body {
 
 @media (max-width: 1100px) {
   .frame .overlap {
-    transform: scale(0.62) translate(-25.5%, -6%); /* Adjust the percentage as needed */
+    transform: scale(0.62) translate(-25.5%, -6%);
+    transform-origin: top center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1075px) {
+  .frame .overlap {
+    transform: scale(0.60) translate(-27%, -6%);
+    transform-origin: top center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1050px) {
+  .frame .overlap {
+    transform: scale(0.58) translate(-29%, -6%);
     transform-origin: top center;
     margin-right: auto;
     margin-left: auto;
@@ -403,9 +436,6 @@ html, body {
   }
 }
 
-
-
-/* mobile view */
 @media (max-width: 480px) {
   * {
     box-sizing: border-box;
@@ -415,7 +445,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Changed to center */
+    align-items: center;
     width: 100%;
     height: 2425px;
     overflow: hidden;
@@ -426,7 +456,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Changed to center */
+    align-items: center;
     width: 100%;
     translate: 0 -51rem;
   }
@@ -439,11 +469,11 @@ html, body {
 
   .frame .overlap {
     position: relative;
-    top: 0; /* Reset top position */
-    left: 0; /* Reset left position */
+    top: 0;
+    left: 0;
     width: 100%;
-    transform: none !important; /* Reset all transforms */
-    margin: 0 auto; /* Center the element */
+    transform: none !important;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -451,7 +481,6 @@ html, body {
     padding: 20px;
   }
 
-  /* Add positioning for your mobile content elements */
   .mobile-service-01 {
     width: 350px;
     height: 396px;
@@ -469,7 +498,7 @@ html, body {
     transform: rotate(180deg) translateY(7.4rem);
   }
 
-  .mobile-globe{
+  .mobile-globe {
     width: 170px;
     height: 170px;
     display: flex;
@@ -478,12 +507,141 @@ html, body {
     translate: 6rem -9rem;
   }
 
-  .mobile-card{
+  .mobile-card {
     width: 360px;
     height: 396px;
     display: flex;
     justify-content: center;
     transform: translateY(-10rem);
     margin-bottom: 3rem;
+  }
+} */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.frame {
+  background-color: #03061c;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  gap: 20px;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1680px;
+  height: auto;
+  flex: 1;
+}
+
+.left {
+  padding-top: 1rem;
+}
+
+.centre-top-part{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  margin-top: 2rem 0;
+}
+
+.centre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -7rem;
+  margin-bottom: -10.2rem;
+}
+
+.centre-bottom-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.right {
+  padding-top: 1rem;
+}
+
+@media (max-width: 1750px) {
+  .wrapper {
+    transform: scale(0.9);
+  }
+}
+@media (max-width: 1550px) {
+  .wrapper {
+    transform: scale(0.85);
+  }
+}
+@media (max-width: 1450px) {
+  .wrapper {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 1350px) {
+  .wrapper {
+    transform: scale(0.75);
+  }
+}
+@media (max-width: 1265px) {
+  .wrapper {
+    transform: scale(0.70);
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    transform: scale(0.65);
+  }
+}
+@media (max-width: 1100px) {
+  .wrapper {
+    transform: scale(0.6);
+  }
+}
+@media (max-width: 1048px) {
+  .wrapper {
+    transform: scale(0.55);
+  }
+}
+@media (max-width: 950px) {
+  .wrapper {
+    transform: scale(0.5);
+  }
+}
+@media (max-width: 850px) {
+  .wrapper {
+    transform: scale(0.45);
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    transform: scale(0.4);
   }
 }
