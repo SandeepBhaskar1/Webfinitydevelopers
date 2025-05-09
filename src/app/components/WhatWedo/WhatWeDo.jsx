@@ -103,39 +103,65 @@
 //   );
 // }
 
+'use client';
 
-
-import react from "react";
+import React, { useEffect, useState } from "react";
 import './WhatWeDo.css';
 
 export default function Frame() {
+  const [mobileView, setMobileView] = useState(false);
 
-  return(
+  useEffect(() => {
+    const checkView = () => {
+      setMobileView(window.innerWidth < 480);
+    };
+
+    checkView();
+    window.addEventListener('resize', checkView);
+
+    return () => window.removeEventListener('resize', checkView);
+  }, []);
+
+  return (
     <div className="frame">
       <div className="wrapper">
-      <div className="left">
-        <img className='new-01' src="/whatwedo/new-01.svg" alt="" />
+        {mobileView ? (
+          <div className='mobile-view'>
+            <img className='mobile-service-01' src="/whatwedo/Services.svg" alt="Services" />
+            <img className='mobile-globe' src="/whatwedo/Globe.svg" alt="Globe" />
+            <img className='mobile-service-02' src="/whatwedo/Services.svg" alt="Service" />
+            <img className='mobile-card' src="/whatwedo/Website-designing.svg" alt="Web Design" />
+            <img className='mobile-card-01' src="/whatwedo/E-commerce.svg" alt="E-commerce" />
+            <img className='mobile-card' src="/whatwedo/Website-designing.svg" alt="Web Design" />
+            <img className='mobile-card-01' src="/whatwedo/E-commerce.svg" alt="E-commerce" />
+          </div>
+        ) : (
+          <>
+            <div className="left">
+              <img className='new-01' src="/whatwedo/new-01.svg" alt="Left Graphic" />
+            </div>
+
+            <div className="container">
+              <div className="centre-top-part">
+                <img className='web-design' src="/whatwedo/Website-designing.svg" alt="Web Design" />
+                <img className='services' src="/whatwedo/Services.svg" alt="Services" />
+                <img className='e-commerce' src="/whatwedo/E-commerce.svg" alt="E-commerce" />
+              </div>
+              <div className="centre">
+                <img src="/whatwedo/Globe.svg" alt="Globe" />
+              </div>
+              <div className="centre-bottom-part">
+                <img className='lead-generation' src="/whatwedo/Lead-Generation.svg" alt="Lead Generation" />
+                <img className='performance-marketing' src="/whatwedo/Performance-Marketing.svg" alt="Performance Marketing" />
+              </div>
+            </div>
+
+            <div className="right">
+              <img src="/whatwedo/new-02.svg" alt="Right Graphic" />
+            </div>
+          </>
+        )}
       </div>
-
-      <div className="container">
-        <div className="centre-top-part">
-          <img className='web-design' src="/whatwedo/Website-designing.svg" alt="" />
-          <img className='services' src="/whatwedo/Services.svg" alt="" />
-          <img className='e-commerce' src="/whatwedo/E-commerce.svg" alt="" />
-        </div>
-        <div className="centre">
-          <img src="/whatwedo/Globe.svg" alt="" />
-        </div>
-        <div className="centre-bottom-part">
-          <img className='lead-generation' src="/whatwedo/Lead-Generation.svg" alt="" />
-          <img className='performance-marketing' src="/whatwedo/performance-Marketing.svg" alt="" />
-        </div>
-        </div>
-
-        <div className="right">
-          <img src="/whatwedo/new-02.svg" alt="" />
-        </div>
-        </div>
     </div>
-  )
+  );
 }
