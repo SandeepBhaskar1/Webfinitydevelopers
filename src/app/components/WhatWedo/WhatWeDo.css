@@ -1,4 +1,5 @@
-/* * {
+/* 
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -515,8 +516,11 @@ html, body {
     transform: translateY(-10rem);
     margin-bottom: 3rem;
   }
-} */
+} 
+  */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
 
 *{
   margin: 0;
@@ -557,6 +561,38 @@ html, body {
 
 .left {
   padding-top: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.left h1{
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 290px;
+  /* height: 48px; */
+  font-size: 38px;
+  padding: 0 1rem;
+  background: linear-gradient(135deg, #008000, #B5AFAF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; 
+  font-weight: 600;
+  letter-spacing: 1;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.left p {
+  position: absolute;
+  top: 67.5%;
+  left: 8%;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 0.7rem;
+  line-height: 1.7rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .centre-top-part{
@@ -566,6 +602,81 @@ html, body {
   gap: 20px;
   position: relative;
   margin-top: 2rem 0;
+}
+
+.web-content {
+  display: inline-block;
+  position: relative;
+}
+
+.web-content h2 {
+  position: absolute;
+  display: flex;
+  top: 55%;
+  left: 20%;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.web-content p {
+  display: flex;
+  position: absolute;
+  top: 67.5%;
+  left: 20.5%;
+  color: #ffffff;
+  font-weight: 100;
+  padding-right: 20px;
+  line-height: 1.4rem;
+  font-family: 'Plus Jakarta Sans' sans-serif;
+}
+
+.service-cont{
+  display: inline-block;
+  position: relative;
+}
+
+.service-cont h1 {
+  position: absolute;
+  z-index: 2;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-35%);
+  font-size: 62px;
+  width: 452px;
+  height: 124px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #ffffff;
+  text-shadow: 5px 5px 4px black;
+}
+
+.e-commerce-content {
+  display: inline-block;
+  position: relative;
+}
+
+.e-commerce-content h2{
+  position: absolute;
+  display: flex;
+  top: 55%;
+  left: 12.5%;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.e-commerce-content p{
+  display: flex;
+  position: absolute;
+  top: 67.5%;
+  left: 12.5%;
+  color: #ffffff;
+  font-weight: 100;
+  padding-right: 60px;
+  line-height: 1.4rem;
+  font-family: 'Plus Jakarta Sans' sans-serif;
 }
 
 .centre{
@@ -585,8 +696,110 @@ html, body {
   margin-top: 2rem;
 }
 
+.lead{
+  display: inline-block;
+  position: relative;
+}
+
+.lead h1 {
+  position: absolute;
+  display: flex;
+  top: 45%;
+  padding: 0 5rem;
+  font-size: 50px;
+  text-align: center;
+    background: linear-gradient(135deg, #008000, #B5AFAF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; 
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.lead p {
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 0.7rem;
+  line-height: 1.7rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.performance-content{
+  display: inline-block;
+  position: relative;
+}
+
+.performance-content h1 {
+  position: absolute;
+  display: flex;
+  top: 45%;
+  padding: 0 5rem;
+  font-size: 50px;
+  text-align: center;
+  background: linear-gradient(135deg, #008000, #B5AFAF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; 
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.performance-content p{
+    position: absolute;
+  top: 80%;
+  left: 0%;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 0.7rem;
+  line-height: 1.7rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
 .right {
   padding-top: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.pencil-lady {
+  position: absolute;
+  z-index: 2;
+  top: 2rem;
+  right: -5.5rem;
+}
+
+.branding-text {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  padding-right: 20px;
+  text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.branding-text h1 {
+  font-size: 38px;
+    background: linear-gradient(135deg, #008000, #B5AFAF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; 
+  font-weight: 600;
+  letter-spacing: 1;
+}
+
+.branding-text p {
+  color: #ffffff;
+  padding-top: 2rem;
+  width: 228px;
+  line-height: 1.7rem;
 }
 
 @media (max-width: 1750px) {
@@ -689,6 +902,24 @@ html, body {
     rotate: 180deg;
     translate: 0 -10rem;
   }
+
+.div {
+  position: relative;
+  display: inline-block;
+}
+
+.div h2{
+  position: absolute;
+  top: 40%;
+  left: 34%;
+  z-index: 2;
+  font-size: 2.2rem;
+  color: white;
+  font-family: inter, sans-serif;
+  font-weight: 300;
+  text-shadow: 3px 3px 4px black;
+  letter-spacing: 2px;
+}
 
   .mobile-globe {
     width: 190px;
