@@ -526,6 +526,7 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans' sans-serif;
 }
 
 .frame {
@@ -895,30 +896,79 @@ html, body {
     margin-top: 5rem;
   }
 
-  .mobile-service-02{
-    width: 400px;
-    /* max-width: 400px; */
-    height: auto;
-    rotate: 180deg;
-    translate: 0 -10rem;
-  }
+.mobile-service {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  height: auto;
+  translate: 0 -10rem;
+}
+
+/* The background image */
+.mobile-service-02 {
+  width: 100%;
+  height: auto;
+  rotate: 180deg;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+/* Overlaying elements */
+.lady-image,
+.mobile-service h2,
+.mobile-service p {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: white; /* optional for visibility */
+  text-align: center;
+}
+
+/* Position adjustments */
+.lady-image {
+  top: 40%;
+  left: 50%;
+  width: 219px;
+  height: 116px; 
+  translate: 9rem -1rem;
+}
+
+.mobile-service h2 {
+  top: 60%;
+  left: 50%;
+  font-size: 1.5rem;
+  translate: 0 -3rem;
+  text-shadow: 2px 2px 5px black;
+}
+
+.mobile-service p {
+  top: 80%;
+  left: 50%;
+  width: 80%;
+  font-size: 1rem;
+  translate: 0 -2rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  line-height: 1.5rem;
+}
+
 
 .div {
   position: relative;
   display: inline-block;
 }
 
-.div h2{
+.div h1{
   position: absolute;
-  top: 40%;
-  left: 34%;
+  top: 30%;
+  left: 27%;
   z-index: 2;
   font-size: 2.2rem;
   color: white;
-  font-family: inter, sans-serif;
-  font-weight: 300;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
   text-shadow: 3px 3px 4px black;
   letter-spacing: 2px;
+  line-height: 2.5rem;
+  text-align: center;
 }
 
   .mobile-globe {
@@ -933,6 +983,80 @@ html, body {
     height: auto;
     translate: -1rem -6rem;
     margin-bottom: 2rem;
+  }
+
+  .mobile-web-design {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mobile-web-design img {
+    width: 22rem;
+    translate: 0.5rem -9rem;
+  }
+
+  .mobile-web-design h2 {
+    display: flex;
+    position: absolute;
+    top: 28%;
+    left: 25%;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px black;
+    font-weight: 400;
+  }
+
+  .mobile-web-design p{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 12.5%;
+    padding: 3rem;
+    padding-right: 6rem;
+    text-align: center;
+    line-height: 1.5rem;
+    color: #ffffff;
+    font-weight: 200;
+  }
+
+  .mobile-ecommerce{
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-ecommerce img{
+    width: 22rem;
+    translate: 2.5rem -6rem;
+  }
+
+  .mobile-ecommerce h2{
+    display: flex;
+    position: absolute;
+    top: 35%;
+    left: 28%;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px black;
+    font-weight: 400;
+  }
+
+  .mobile-ecommerce p{
+    display: flex;
+    position: absolute;
+    top: 36%;
+    left: 12.5%;
+    padding: 3rem;
+    padding-right: 6rem;
+    text-align: center;
+    line-height: 1.5rem;
+    color: #ffffff;
+    font-weight: 200;
   }
 
   .mobile-card-01 {

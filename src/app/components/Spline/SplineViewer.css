@@ -36,4 +36,8 @@ main{
         padding: 0;
         z-index: -1;
     }
+
+    .spline {
+        opacity: 0.2;
+    }
 }

@@ -8,6 +8,7 @@ const Testimonials = () => {
     {src: '/CompanyLogos/scc.png', alt: 'Segmented Concrete Company Logo'},
     {src: '/CompanyLogos/tasty-world.png', alt: 'Tasty World Logo'},
     {src: '/CompanyLogos/waterjet-logo.png', alt: 'Waterjet Logo'},
+    {src: '/CompanyLogos/drift.png', alt: 'Drift Logo'},
   ]
   return (
     <div className='testimony-container'>
