@@ -128,11 +128,18 @@ export default function Frame() {
         {mobileView ? (
           <div className='mobile-view'>
             <div className="div">
-            <img className='mobile-service-01' onContextMenu={(e).preventDefault()} draggable='false' src="/whatwedo/Services.svg" alt="Services" />
+            <img className='mobile-service-01' onContextMenu={(e) => e.preventDefault()} draggable='false' src="/whatwedo/Services.svg" alt="Services" />
             <h2>Services</h2>
             </div>
+
             <img className='mobile-globe' src="/whatwedo/Globe.svg" alt="Globe" />
+
+            <div className="mobile-service">
             <img className='mobile-service-02' src="/whatwedo/Services.svg" alt="Service" />
+            <h2>BRANDING</h2>
+            </div>
+
+
             <img className='mobile-card' src="/whatwedo/Website-designing.svg" alt="Web Design" />
             <img className='mobile-card-01' src="/whatwedo/E-commerce.svg" alt="E-commerce" />
             <img className='mobile-card' src="/whatwedo/Website-designing.svg" alt="Web Design" />
